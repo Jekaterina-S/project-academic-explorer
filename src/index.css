@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    @apply bg-white text-gray-900  text-justify text-center;
+  }
+
+  html.dark {
+    @apply bg-gray-900 text-white;
+  }
+
+  html.text-sm {
+    @apply text-sm;
+  }
+
+  html.text-base {
+    @apply text-base;
+  }
+
+  html.text-lg {
+    @apply text-lg;
+  }
+
+  body {
+    @apply m-0 min-w-screen min-h-screen antialiased;
+  }
+
+  h1, h2 {
+    @apply font-bold;
+  }
+
+  h3, h4, h5, h6 {
+    @apply font-semibold;
+  }
+
+  a {
+    @apply font-medium text-blue-600 hover:text-blue-500 hover:underline transition;
+  }
+
+  html.dark a {
+    @apply  text-lime-300 hover:text-lime-200;
+  }
+
+  button {
+    @apply bg-blue-600 text-white hover:bg-blue-700 transition rounded px-4 py-2 border border-transparent font-medium;
+  }
+
+  html.dark button {
+    @apply text-gray-700 bg-lime-300 hover:bg-lime-200;
+  }
+
+  input[type="text"] {
+    @apply w-full px-4 py-2 rounded border bg-white text-black border-gray-300;
+  }
+
+  html.dark input[type="text"] {
+    @apply bg-gray-800 text-white border-gray-700;
+  }
+
+  span {
+    @apply text-gray-700 mr-4;
+  }
+
+  html.dark span {
+    @apply text-gray-300;
+  }
+
+  li {
+    @apply p-4 border rounded cursor-pointer hover:bg-gray-50;
+  }
+  
+  html.dark li {
+    @apply hover:bg-gray-800;
+  }
+
+  select {
+    @apply bg-white;
+  }
+  html.dark select {
+    @apply bg-gray-900;
+  }
+
+  html.dark input[type="checkbox"] {
+    @apply accent-lime-300;
+  }
+
+  .faded-text {
+    @apply text-sm text-gray-500;
+  }
+  
+  html.dark .faded-text {
+    @apply text-gray-300;
+  }
+  
+  .abs-text {
+    @apply text-sm text-gray-700;
+  }
+  
+  html.dark .abs-text {
+    @apply text-gray-200;
+  }
+
+  .authors {
+    @apply text-sm text-gray-700;
+  }
+  
+  html.dark .authors {
+    @apply text-gray-200;
+  }
+}

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.light {
+  @apply bg-white text-gray-900;
+}
+
+.dark {
+  @apply bg-gray-900 text-white;
+}
+
+.container {
+  @apply min-h-screen flex items-center justify-center transition-colors duration-300;
+}
